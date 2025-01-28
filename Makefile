@@ -4,8 +4,15 @@
 # ==================================================================================== #
 .PHONY: test
 test:
-	python -m pytest tests
+	dotenv -f .env run python -m pytest tests
 
 .PHONY: dev
 dev:
 	uvicorn src.main:app --workers 1 --host 0.0.0.0 --port 8000
+
+# ==================================================================================== #
+# PROD
+# ==================================================================================== #
+.PHONY: run
+run:
+	docker-compose up -d

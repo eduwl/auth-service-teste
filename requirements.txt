@@ -2,6 +2,7 @@ fastapi
 httpx
 pydantic
 pydantic-settings
+python-dotenv
 PyJWT
 pytest
 uvicorn

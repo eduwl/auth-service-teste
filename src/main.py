@@ -1,8 +1,11 @@
 from fastapi import FastAPI, APIRouter, Request
 from fastapi.middleware.cors import CORSMiddleware
+from dotenv import load_dotenv
 
 from src.controller.factory import create_login_controller
 from src.middlewares.role_based import check_role
+
+load_dotenv()
 
 app = FastAPI()
 

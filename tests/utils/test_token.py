@@ -1,8 +1,12 @@
+from dotenv import load_dotenv
 import pytest
 import jwt
+import os
+
 from src.utils.token import create_token, verify_token
 
-SECRETY_KEY = "supersecret"
+load_dotenv()
+SECRETY_KEY=os.getenv("SECRETY_KEY")
 
 @pytest.fixture
 def mock_claims():
