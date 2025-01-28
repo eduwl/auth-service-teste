@@ -22,7 +22,7 @@ SECRETY_KEY="SUPER_SUPER_SECRET"
 
 ## Makefile
 
-O projeto contem um `Makefile` para agilizar comandos comuns.
+O projeto contem um `Makefile` para agilizar comandos comuns, execute os comandos abaixo na raiz do projeto.
 
 ### Teste
 - Para realizar os testes unitarios presentes no projeto use o seguinte comando.
